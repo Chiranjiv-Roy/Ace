@@ -23,7 +23,7 @@ io.on('connection', function (socket) {
   // socket.broadcast.emit('user.events', 'Someone has joined!');
   console.log("Another tab joined!!!");
   socket.on('diff', (edits) => {
-  	io.sockets.emit('patch',edits);
+  	socket.broadcast.emit('patch',edits);
   });
 });
 
