@@ -1,5 +1,13 @@
 $(window).on('load',function(){
-  
+  // window.Split(['#chat', '#collaboration'], {
+  //   sizes: [50, 50]
+  // });
+
+  // window.Split(['#editor', '#online_users'], {
+  //   direction: 'vertical',
+  //   sizes: [50, 50]
+  // });
+
   var last_applied_change = null;
   var editor = ace.edit("editor");
   editor.setTheme("ace/theme/monokai");
