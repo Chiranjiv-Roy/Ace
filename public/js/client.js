@@ -10,8 +10,8 @@ $(window).on('load',function(){
 
   var last_applied_change = null;
   var editor = ace.edit("editor");
-  editor.setTheme("ace/theme/monokai");
-  editor.getSession().setMode("ace/mode/javascript");
+  editor.setTheme("ace/theme/kitchen-sink");
+  editor.getSession().setMode("ace/mode/text");
   
   var dmp = new diff_match_patch();
 
